@@ -1,15 +1,21 @@
-class Animal:
-    def speak(self):
-        pass
+# polymorphism in Built-in function len()
 
-class Dog(Animal):
-    def speak(self):
-        return "Woof!"
+students = ['Reddy', 'Lokesh', 'Naveen']
 
-class Cat(Animal):
-    def speak(self):
-        return "Meow!"
+school = 'ABC school'
 
-animals = [Dog(), Cat()]
-for animal in animals:
-    print(animal.speak())
+name = ['tt', 'yy', 'rr', 'ss', 'oo']
+
+present = 'TODAY attendence'
+
+# calculate count
+print(len(students))
+print(len(school))
+print(len(name))
+print(len(present))
+
+OUTPUT:
+3
+10
+5
+16
