@@ -1,21 +1,16 @@
-# polymorphism in Built-in function len()
+class Widget:
+    def render(self):
+        pass
 
-students = ['Reddy', 'Lokesh', 'Naveen']
+class Button(Widget):
+    def render(self):
+        print("Rendering a button")
 
-school = 'ABC school'
+class TextBox(Widget):
+    def render(self): 
+        print("Rendering a text box")
 
-name = ['tt', 'yy', 'rr', 'ss', 'oo']
 
-present = 'TODAY attendence'
-
-# calculate count
-print(len(students))
-print(len(school))
-print(len(name))
-print(len(present))
-
-OUTPUT:
-3
-10
-5
-16
+widgets = [Button(), TextBox()]
+for widget in widgets:
+    widget.render()  # Added parentheses to call the method
